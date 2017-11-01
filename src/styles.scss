@@ -1,1 +1,21 @@
+
 /* You can add global styles to this file, and also import other style files */
+$primary:      #f3800d;
+$success:      #8AC769;
+$info:         #4EB7B0;
+$warning:      #EAD62C;
+$danger:       #DD3740;
+
+$white:    #F6F6F7;
+$gray-100: #EDEEF0;
+$gray-200: #E4E5E9;
+$gray-300: #DBDDE2;
+$gray-400: #CACCD3;
+$gray-500: #C1C4CC;
+$gray-600: #737781;
+$gray-700: #575960;
+$gray-800: #3A3C40;
+$gray-900: #2C2D30;
+$black:    #0F0F10;
+
+@import "node_modules/bootstrap/scss/bootstrap";

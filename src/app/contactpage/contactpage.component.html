@@ -1,0 +1,47 @@
+<div class="container">
+<h2>Contact Us</h2>
+
+    <form class="form-horizontal" name="contactform" data-toggle="validator" method="post" action="myscript-goes-here" role="form">
+        <fieldset>
+            <!-- Text inputName -->
+            <div class="form-group">
+                <label class="col-md-4 control-label">Name</label>  
+                <div class="col-md-4 inputGroupContainer">
+                    <input  name="inputName"  required placeholder="Your Name" class="form-control"  type="text" oninvalid="this.setCustomValidity('Please Enter your name')"
+                    oninput="setCustomValidity('')">
+                </div>
+            </div>
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label">Phone #</label>  
+                <div class="col-md-4 inputGroupContainer">
+                    <input name="inputNumber"  required pattern="\b\d{3}[-.]?\d{3}[-.]?\d{4}\b" minlength=10 placeholder="845-555-1212" class="form-control" type="text" oninvalid="this.setCustomValidity('Please Enter your phone number in the format xxx-xxx-xxxx')"
+                    oninput="setCustomValidity('')">
+                 </div>
+            </div>
+            <!-- Text inputEmail-->
+            <div class="form-group">
+                <label class="col-md-4 control-label">E-Mail</label>  
+                <div class="col-md-4 inputGroupContainer">
+                    <input name="inputEmail" required pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"  placeholder="E-Mail Address" class="form-control"  type="text" oninvalid="this.setCustomValidity('Please Enter a valid email address')"
+                        oninput="setCustomValidity('')">
+                </div>
+            </div>
+            <!-- Text area Message-->
+            <div class="form-group">
+                <label class="col-md-4 control-label">Message for the Team</label>
+                <div class="col-md-4 inputGroupContainer">
+                    <textarea class="form-control" required name="inputMessage" placeholder="Your message" oninvalid="this.setCustomValidity('Please let us know what you are interested in')"
+                        oninput="setCustomValidity('')"></textarea>
+                </div>
+            </div>
+            <!-- Button -->
+            <div class="form-group">
+                <label class="col-md-4 control-label"></label>
+                <div class="col-md-4">
+                    <button type="submit" class="btn btn-primary">Send the Message </button>
+                </div>
+            </div>
+        </fieldset> 
+    </form>
+</div>
