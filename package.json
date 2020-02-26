@@ -15,7 +15,7 @@
     "bootstrap": "^4.4.1",
     "core-js": "^2.6.11",
     "jquery": "^3.4.1",
-    "ngx-bootstrap": "^3.3.0",
+    "ngx-bootstrap": "^5.5.0",
     "popper.js": "^1.16.1",
     "tether": "^1.4.7",
     "tslib": "^1.11.0",
